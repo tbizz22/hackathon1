@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="./style.css" />
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* The Modal (background) */
+
+        .modal {
+            display: none;
+            /* Hidden by default */
+            position: fixed;
+            /* Stay in place */
+            z-index: 1;
+            /* Sit on top */
+            padding-top: 100px;
+            /* Location of the box */
+            left: 0;
+            top: 0;
+            width: 100%;
+            /* Full width */
+            height: 100%;
+            /* Full height */
+            overflow: auto;
+            /* Enable scroll if needed */
+            background-color: rgb(0, 0, 0);
+            /* Fallback color */
+            background-color: rgba(0, 0, 0, 0.4);
+            /* Black w/ opacity */
+        }
+
+        /* Modal Content */
+
+        .modal-content {
+            background-color: #fefefe;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+        }
+
+        /* The Close Button */
+
+        .close {
+            color: #aaaaaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Modal Example</h2>
+
+    <!-- Trigger/Open The Modal -->
+    <button id="myBtn">Open Modal
+    </button>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="close">&times;</div>
+
+
+
+            <!-- modal body -->
+            <div class="row">
+                <div class="col m6">
+                    <h5>Global Shortcuts</h5>
+                    <h6>General</h6>
+                    <ul>
+                        <li>
+                            Go to Dashboard:
+                            <span class="letter">G</span> then
+                            <span class="letter">D</span>
+                        </li>
+                        <li>
+                            Compose Email:
+                            <span class="letter">G</span> then
+                            <span class="letter">E</span>
+                        </li>
+                    </ul>
+
+                    <h6>Quick Search</h6>
+                    <ul>
+                        <li>
+                            Quick Search:
+                            <span class="letter">/</span>
+                        </li>
+                        <h6>With Quick Search in Focus</h6>
+                        <li>
+                            Search People:
+                            <span class="letter">Alt</span> then
+                            <span class="letter">P</span>
+                        </li>
+                        <li>
+                            Search Jobs:
+                            <span class="letter">Alt</span> then
+                            <span class="letter">J</span>
+                        </li>
+                        <li>
+                            Search New Hire Category:
+                            <span class="letter">Alt</span> then
+                            <span class="letter">N</span>
+                        </li>
+                        <li>
+                            Search Talent Pools:
+                            <span class="letter">Alt</span> then
+                            <span class="letter">T</span>
+                        </li>
+                        <li>
+                            Search Room:
+                            <span class="letter">Alt</span> then
+                            <span class="letter">R</span>
+                        </li>
+                        <li>
+                            Search Event:
+                            <span class="letter">Alt</span> then
+                            <span class="letter">E</span>
+                        </li>
+                    </ul>
+
+
+                </div>
+                <div class="col m6">
+                    <h5>Navigation</h5>
+
+                    <h6>MiniBrowser</h6>
+                    <ul>
+                        <li>
+                            Go to Next Record:
+                            <span class="letter">K</span>
+                        </li>
+                        <li>
+                            Go to Previous Record:
+                            <span class="letter">J</span>
+                        </li>
+                    </ul>
+
+                    <h6>MenuBar</h6>
+                    <div>Menu items are numbered 1-9, starting from left to right.</div>
+                    <ul>
+                        <li>
+                            Menu location:
+                            <span class="letter">M</span> then
+                            <span class="letter">1-9</span>
+                        </li>
+                    </ul>
+
+                    <h6>Reports</h6>
+                    <ul>
+                        <li>
+                            Go to Person Report:
+                            <span class="letter">R</span> then
+                            <span class="letter">P</span>
+                        </li>
+                        <li>
+                            Go to Job Report:
+                            <span class="letter">R</span> then
+                            <span class="letter">J</span>
+                        </li>
+                        <li>
+                            Go to Recruiting Workflow Report:
+                            <span class="letter">R</span> then
+                            <span class="letter">R</span>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="col m6">
+                    <h5>Profile Actions</h5>
+                    <ul>
+                        <li>
+                            Edit:
+                            <span class="letter">E</span>
+                        </li>
+                    </ul>
+                    
+                    <h6>When profile is in edit mode</h6>
+                    <ul>
+                        <li>
+                            Show Field Picker:
+                            <span class="letter">,</span>
+                        </li>
+                        <li>
+                            Save Changes:
+                            <span class="letter">Alt</span> then
+                            <span class="letter">S</span>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="col m6">
+                    <h5>Search Actions</h5>
+
+                    <div>Search Actions are numbered 1-9, starting from left to right.</div>
+                    <ul>
+                        <li>
+                            Search Action Location:
+                            <span class="letter">S</span> then
+                            <span class="letter">1-9</span>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById('myModal');
+
+        // Get the letter that opens the modal
+        var btn = document.getElementById("myBtn");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the letter, open the modal 
+        btn.onclick = function () {
+            modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+
+</body>
+
+</html>
