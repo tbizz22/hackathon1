@@ -61,12 +61,16 @@ var o = {
         "Keys": [{
                 "Label": "In MiniBrowser - Next",
                 "key": "J",
-                "result": "recordRight_href"
+                "result": function () {
+                    document.getElementById("recordRight_href").click();
+                }
             },
             {
                 "Label": "In MiniBrowser - Previous",
                 "key": "K",
-                "result": "recordLeft_href"
+                "result": function () {
+                    document.getElementById("recordLeft_href").click();
+                }
             },
             {
                 "Label": "Menu - Create",
@@ -123,39 +127,103 @@ var o = {
                     document.getElementById('Admin_navdropdown').click();
                     document.getElementById('Admin_navdropdown').focus();
                 }
-            }
+            },
+            {
+                "Label": "Report - Person",
+                "key": "R,P",
+                "result": function () {
+                //  These dont have ids
+                }
+            },
+            {
+                "Label": "Report - Job",
+                "key": "R,J",
+                "result": function () {
+                    // These dont have ids
+                }
+            },
+            {
+                "Label": "Report - Recruiting Workflow",
+                "key": "R,R",
+                "result": function () {
+                    // These dont have ids
+                }
+            },
+
         ]
     },
     "Search Actions": {
         "Keys": [{
                 "Label": "Search Action 1",
                 "key": "A,1",
-                "result": ""
+                "result": function () {
+                    var Pos1ID = ""
+                    if (searchtype === "Job") {
+                        Pos1ID = "actionNewTemplate"
+                    } else if (searchtype === "person") {
+                        Pos1ID = "actionComm"
+                    }
+                }
             },
             {
                 "Label": "Search Action 2",
                 "key": "A,2",
-                "result": ""
+                "result": function () {
+                    var Pos2ID = ""
+                    if (searchtype === "Job") {
+                        Pos2ID = "actionForwardJob"
+                    } else if (searchtype === "person") {
+                        Pos2ID = "actionAptPerson"
+                    }
+                }
             },
             {
                 "Label": "Search Action 3",
                 "key": "A,3",
-                "result": ""
+                "result": function () {
+                    var Pos3ID = ""
+                    if (searchtype === "Job") {
+                        Pos3ID = "actionBulkEditFields"
+                    } else if (searchtype === "person") {
+                        Pos3ID = "actionTaskPerson"
+                    }
+                }
             },
             {
                 "Label": "Search Action 4",
                 "key": "A,4",
-                "result": ""
+                "result": function () {
+                    var Pos4ID= ""
+                    if (searchtype === "Job") {
+                        Pos4ID= "actionPost"
+                    } else if (searchtype === "person") {
+                        Pos4ID= "actionMassIdentify"
+                    }
+                }
             },
             {
                 "Label": "Search Action 5",
                 "key": "A,5",
-                "result": ""
+                "result": function () {
+                    var Pos5ID = ""
+                    if (searchtype === "Job") {
+                        Pos5ID = "actionCopyJob"
+                    } else if (searchtype === "person") {
+                        Pos5ID = "actionBulkEditFields"
+                    }
+                }
             },
             {
                 "Label": "Search Action 6",
                 "key": "A,6",
-                "result": ""
+                "result": function () {
+                    var Pos6ID = ""
+                    if (searchtype === "Job") {
+                        Pos6ID = "actionBulkSQDelete"
+                    } else if (searchtype === "person") {
+                        Pos6ID = "actionForwardCand"
+                    }
+                }
             }
         ]
     },
