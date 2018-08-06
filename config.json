@@ -8,37 +8,37 @@
             },
             {
                 "Label": "Change Quick Search Type - Person",
-                "key": "Alt+P",
+                "key": "Alt+80",
                 "result": ""
             },
             {
                 "Label": "Change Quick Search Type - Job",
-                "key": "Alt+J",
+                "key": "Alt+74",
                 "result": ""
             },
             {
                 "Label": "Change Quick Search Type - New Hire Category",
-                "key": "Alt+N",
+                "key": "Alt+78",
                 "result": ""
             },
             {
                 "Label": "Change Quick Search Type - Talent Pools",
-                "key": "Alt+T",
+                "key": "Alt+84",
                 "result": ""
             },
             {
                 "Label": "Change Quick Search Type - Company",
-                "key": "Alt+C",
+                "key": "Alt+67",
                 "result": ""
             },
             {
                 "Label": "Change Quick Search Type - Room",
-                "key": "Alt+R",
+                "key": "Alt+82",
                 "result": ""
             },
             {
                 "Label": "Change Quick Search Type - Event",
-                "key": "Alt+E",
+                "key": "Alt+69",
                 "result": ""
             },
             {
@@ -150,7 +150,7 @@
             },
             {
                 "Label": "Save",
-                "key": "Alt+S",
+                "key": "Alt+83",
                 "result": ""
             },
             {
